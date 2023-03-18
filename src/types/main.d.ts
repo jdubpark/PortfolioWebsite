@@ -45,8 +45,11 @@ declare global {
 
 	interface ProjectItemProps {
 		name: string,
-		logo: JSX.Element | React.ReactNode,
+		logo: JSX.Element | React.ReactNode, // typeof React.Component,
 		fromTime: string,
 		toTime: string,
+		github?: string,
+		webMain?: string,
+		webAlt?: string,
 	}
 }

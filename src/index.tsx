@@ -2,6 +2,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 import ThemeProvider from '@mui/material/styles/ThemeProvider'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import TagManager from 'react-gtm-module'
 
 import './style/index.css'
 
@@ -10,12 +11,13 @@ import theme from './theme'
 
 // Parcel HMR (ignore error)
 // @ts-ignore
-if (module.hot) {
-  // @ts-ignore
-  module.hot.accept(function () {
-    window.location.reload();
-  });
+if (module.hot) module.hot.accept(() => window.location.reload())
+
+const tagManagerArgs = {
+  gtmId: 'GTM-N2F6BHR'
 }
+
+TagManager.initialize(tagManagerArgs)
 
 ReactDOM.render(
   <React.StrictMode>

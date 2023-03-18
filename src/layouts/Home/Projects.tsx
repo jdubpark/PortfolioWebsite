@@ -6,10 +6,13 @@ import { AiOutlineSmile } from 'react-icons/ai'
 import { FcFlashOn, FcLike } from 'react-icons/fc'
 
 import Section from '../../components/Section'
+import SocialIconButton from '../../components/SocialIconButton'
 import dataProjectItems from '../../data/projects'
 
 function ProjectItem({
 	name, logo, fromTime, toTime,
+	// links
+	github, webMain, webAlt,
 }: ProjectItemProps) {
 	return (
 		<Stack
@@ -60,14 +63,20 @@ function ProjectItem({
 						This is some description that works better than Lorem Ipsum to create content that looks legit when skimping over, as it is more natural than the repeated use of same words and letters.
 					</Typography>
 				</Box>
-				<Box
-					p={{ xs: 3, md: 4 }}
+				<Stack
+					direction={{ xs: 'row', sm: 'column' }}
+					justifyContent="flex-start"
+					alignItems="stretch"
+					spacing={2}
+					py={{ xs: 3, md: 4 }}
+					px={{ xs: 3, md: 2 }}
 					borderRadius={4}
 					className="bg-blue-100/50"
 				>
-					<Typography variant="subtitle2">Github</Typography>
-					<Typography variant="subtitle2">Info</Typography>
-				</Box>
+					{github && <SocialIconButton href={github} />}
+					{webMain && <SocialIconButton href={webMain} custom />}
+					{/* {twitter && <SocialIconButton href={twitter} />} */}
+				</Stack>
 			</Stack>
 		</Stack>
 	)

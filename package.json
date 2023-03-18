@@ -19,6 +19,7 @@
     "react": "^17.0.2",
     "react-animated-cursor": "^2.2.0",
     "react-dom": "^17.0.2",
+    "react-gtm-module": "^2.0.11",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.33.1",
     "react-scripts": "5.0.0",
