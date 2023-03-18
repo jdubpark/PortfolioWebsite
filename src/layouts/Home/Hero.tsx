@@ -11,14 +11,20 @@ export default function HomeHero() {
   return (
     <Box
       id="hero"
-      height="100vh"
+      position="relative"
+      height={{ xs: '75vh', md: '95vh' }}
       width="100vw"
       maxWidth="100vw"
       overflow="hidden"
       className="bg-alt-blue shadow-xl"
       borderRadius="0 0 20px 20px"
     >
-      <video autoPlay loop muted className="absolute inset-0 h-screen w-screen max-w-6xl m-auto z-10">
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute inset-0 h-full w-screen max-w-6xl m-auto z-10"
+      >
         <source src={gradientWaveBg} type="video/mp4" />
       </video>
       <Container className="relative h-full z-20">

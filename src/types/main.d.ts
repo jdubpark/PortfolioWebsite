@@ -1,3 +1,4 @@
+import { SxProps, Theme } from '@mui/material'
 import React from 'react'
 import { IconType } from 'react-icons'
 
@@ -49,7 +50,9 @@ declare global {
 		fromTime: string,
 		toTime: string,
 		github?: string,
+		youtube?: string,
 		webMain?: string,
 		webAlt?: string,
+		blocks: JSX.Element | React.ReactNode | React.ReactNode[],
 	}
 }
