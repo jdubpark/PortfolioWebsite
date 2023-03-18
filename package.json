@@ -3,27 +3,33 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@headlessui/react": "^1.5.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.3",
+    "@swc/helpers": "^0.4.12",
+    "@tailwindcss/typography": "^0.5.8",
+    "autoprefixer": "^10.4.12",
     "clsx": "^1.1.1",
-    "daisyui": "^2.2.2",
     "dotenv": "^15.0.0",
     "framer-motion": "^6.2.8",
     "gsap": "^3.9.1",
+    "parcel": "^2.0.0-nightly.1181",
+    "postcss": "^8.4.18",
+    "postcss-loader": "^7.0.1",
     "react": "^17.0.2",
     "react-animated-cursor": "^2.2.0",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.33.1",
-    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-social-icons": "^5.14.0",
+    "tailwindcss": "^3.2.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
-    "test": "DISABLE_ESLINT_PLUGIN=true react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "parcel src/index.html -p 3000",
+    "prebuild": "rm -rf dist/",
+    "build": "DISABLE_ESLINT_PLUGIN=true parcel build src/index.html"
   },
   "eslintConfig": {
     "extends": [
@@ -44,8 +50,10 @@
     ]
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-svg-react": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
     "assert": "^2.0.0",
-    "autoprefixer": "^10.4.2",
     "crypto-browserify": "^3.12.0",
     "cssnano": "^5.1.0",
     "eslint": "^8.8.0",
@@ -58,11 +66,13 @@
     "https-browserify": "^1.0.0",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "os-browserify": "^0.3.0",
-    "postcss": "^8.4.6",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.7",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
-    "tailwindcss": "^3.0.18"
-  }
+    "typescript": "^4.8.4"
+  },
+  "repository": "https://github.com/jdubpark/PortfolioWebsite.git",
+  "author": "Jongwon Park <jwparktom@gmail.com>",
+  "license": "MIT"
 }

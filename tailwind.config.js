@@ -1,11 +1,10 @@
-const plugin = require('tailwindcss/plugin')
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   presets: [],
-  darkMode: 'class', // or 'media'
+  darkMode: 'media', // or 'class'
   theme: {
     screens: {
       sm: '640px',
@@ -14,6 +13,7 @@ module.exports = {
       xl: '1280px',
       '2xl': '1536px',
     },
+    supports: {},
     colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
@@ -42,7 +42,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
-      // custom
+      // Custom
       pblue: '#3e59cd',
       illini: {
         orange: '#FF552E',
@@ -123,9 +123,16 @@ module.exports = {
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
-      // custom
-      'spin-slow': 'spin 3s linear infinite',
-      'wiggle-slow': 'wiggle 3s cubic-bezier(0, 0, 0.2, 1) infinite',
+    },
+    aria: {
+      checked: 'checked="true"',
+      disabled: 'disabled="true"',
+      expanded: 'expanded="true"',
+      hidden: 'hidden="true"',
+      pressed: 'pressed="true"',
+      readonly: 'readonly="true"',
+      required: 'required="true"',
+      selected: 'selected="true"',
     },
     aspectRatio: {
       auto: 'auto',
@@ -210,6 +217,9 @@ module.exports = {
       '3xl': '1.5rem',
       full: '9999px',
     },
+    borderSpacing: ({ theme }) => ({
+      ...theme('spacing'),
+    }),
     borderWidth: {
       DEFAULT: '1px',
       0: '0px',
@@ -296,7 +306,10 @@ module.exports = {
       '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
       none: '0 0 #0000',
     },
-    fill: ({ theme }) => theme('colors'),
+    fill: ({ theme }) => ({
+      none: 'none',
+      ...theme('colors'),
+    }),
     grayscale: {
       0: '0',
       DEFAULT: '100%',
@@ -360,7 +373,11 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Montserrat',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
         'Roboto',
         '"Helvetica Neue"',
         'Arial',
@@ -371,9 +388,9 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['Inter', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
-        'Poppins',
+        'ui-monospace',
         'SFMono-Regular',
         'Menlo',
         'Monaco',
@@ -382,9 +399,6 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
-      brand: ['Poppins'],
-      title: ['Montserrat'],
-      'small-title': ['Roboto'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -590,20 +604,6 @@ module.exports = {
           animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
         },
       },
-      keyframes: {
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-5deg)' },
-          '50%': { transform: 'rotate(5deg)' },
-        },
-        'wiggle-lg': {
-          '0%, 100%': { transform: 'rotate(-10deg)' },
-          '50%': { transform: 'rotate(10deg)' },
-        },
-        'wiggle-xl': {
-          '0%, 100%': { transform: 'rotate(-15deg)' },
-          '50%': { transform: 'rotate(15deg)' },
-        },
-      },
     },
     letterSpacing: {
       tighter: '-0.05em',
@@ -667,21 +667,25 @@ module.exports = {
       prose: '65ch',
       ...breakpoints(theme('screens')),
     }),
-    minHeight: {
+    minHeight: ({ theme, breakpoints }) => ({
+      ...theme('spacing'),
       0: '0px',
       full: '100%',
       screen: '100vh',
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',
-    },
-    minWidth: {
+      ...breakpoints(theme('screens')),
+    }),
+    minWidth: ({ theme, breakpoints }) => ({
+      ...theme('spacing'),
       0: '0px',
       full: '100%',
       min: 'min-content',
       max: 'max-content',
       fit: 'fit-content',
-    },
+      ...breakpoints(theme('screens')),
+    }),
     objectPosition: {
       bottom: 'bottom',
       center: 'center',
@@ -818,7 +822,10 @@ module.exports = {
     space: ({ theme }) => ({
       ...theme('spacing'),
     }),
-    stroke: ({ theme }) => theme('colors'),
+    stroke: ({ theme }) => ({
+      none: 'none',
+      ...theme('colors'),
+    }),
     strokeWidth: {
       0: '0',
       1: '1',
@@ -976,13 +983,13 @@ module.exports = {
     'disabled',
   ],
   plugins: [
-    require('daisyui'), // https://daisyui.com/
-    plugin(({ addUtilities }) => {
+    require('@tailwindcss/typography'),
+    ({ addUtilities }) => {
       addUtilities({
         '.no-scrollbar::-webkit-scrollbar': {
           display: 'none',
         },
       })
-    }),
+    },
   ],
 }
