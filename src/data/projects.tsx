@@ -94,12 +94,24 @@ const projectItems: ProjectItemProps[] = [
 	{
 		name: 'zk KYC SBT',
 		logo: <img src={zkKYCSBTLogo} alt="zkKYCSBT" style={imageStyle} />,
-		fromTime: 'Sep 2022',
+		fromTime: 'Jun 2022',
 		toTime: '',
 		github: 'https://github.com/ETHNYC-ZK-KYC-Soulbound',
 		blocks: <BasicTextBlocks texts={[
 			'zkKYC SBT is a PoC for zk-SNARK based Soulbound token (SBT) storing KYC data. As a privacy-preserving tool, it stores zk-SNARK to prove the KYC data is valid and exists as a Sybil-resistant SBT.',
 			'Won: 1st place in WallectConnect DeFi bounty @ ETH NewYork',
+		]} />,
+	},
+
+	{
+		name: 'Beetect',
+		logo: <img src={beetectLogo} alt="Beetect" style={imageStyle} />,
+		fromTime: 'Jan',
+		toTime: 'May 2021',
+		github: 'https://github.com/jdubpark/beetect',
+		webMain: 'https://drive.google.com/file/d/1c2-Ci1co7iXfoEQjH9rsZZmOse3J_fkI/view?usp=sharing',
+		blocks: <BasicTextBlocks texts={[
+			'An experiment on training and detecting bees using Faster R-CNN in a compute-limited environment. It uses a custom curated dataset of 1,000+ bee images and an efficient model with a ResNet-50 backbone.',
 		]} />,
 	},
 	{
@@ -115,17 +127,6 @@ const projectItems: ProjectItemProps[] = [
 			'It utilizes two separate BERT models with layer-wise connections and deploys an alternating training process, which resembles the brain\'s learning during the day and consolidation of knowledge while sleeping.',
 		]} />,
 	},
-	{
-		name: 'Beetect',
-		logo: <img src={beetectLogo} alt="Beetect" style={imageStyle} />,
-		fromTime: 'Jan',
-		toTime: 'May 2021',
-		github: 'https://github.com/jdubpark/beetect',
-		webMain: 'https://drive.google.com/file/d/1c2-Ci1co7iXfoEQjH9rsZZmOse3J_fkI/view?usp=sharing',
-		blocks: <BasicTextBlocks texts={[
-			'An experiment on training and detecting bees using Faster R-CNN in a compute-limited environment. It uses a custom curated dataset of 1,000+ bee images and an efficient model with a ResNet-50 backbone.',
-		]} />,
-	}
 ]
 
 export default projectItems

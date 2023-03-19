@@ -4,7 +4,7 @@ import {
 
 const profileShorts: AboutShortProfileProps[] = [
   { logo: FcGlobe, header: 'From', content: 'Seoul, Korea' },
-  { logo: FcAddressBook, header: 'Email', content: 'contact@{this domain}' },
+  { logo: FcAddressBook, header: 'Email', content: 'contact@{domain}' },
   { logo: FcBriefcase, header: 'Summer 23', content: 'Solana Labs' },
   { logo: FcCollect, header: 'Around', content: 'Chicago, IL' },
   { logo: FcGraduationCap, header: 'Studying', content: 'UIUC CS (2024)' },
