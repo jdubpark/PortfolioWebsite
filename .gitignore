@@ -27,5 +27,6 @@ yarn-error.log*
 
 # parcel
 .cache
-/dist
+dist
+src/dist
 .parcel-cache
