@@ -9,7 +9,7 @@ const profileShorts: AboutShortProfileProps[] = [
   { logo: FcCollect, header: 'Around', content: 'Chicago, IL' },
   { logo: FcGraduationCap, header: 'Studying', content: 'UIUC CS (2024)' },
   // { logo: FcCalendar, header: 'Next up', content: 'ETH Denver' },
-  { logo: FcWikipedia, header: 'Click for my', content: 'Resume', linked: '/Resume_Blockchain.pdf' }
+  { logo: FcWikipedia, header: 'Click for my', content: 'Resume', linked: 'https://resume.parkjongwon.com' }
 ]
 
 const shortWords: AboutShortWordsProps[] = [

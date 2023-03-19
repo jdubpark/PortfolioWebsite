@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom'
 import TagManager from 'react-gtm-module'
 
 import './style/index.css'
-import 'url:./assets/resume/Resume_Blockchain.pdf' // for saving to dist when building
 
 import App from './pages/App'
 import theme from './theme'
