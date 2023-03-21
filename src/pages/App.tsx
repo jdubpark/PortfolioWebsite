@@ -7,7 +7,7 @@ import Home from './Home'
 
 // use `require` for packages with no typescript support
 // eslint-disable-next-line no-undef
-const AnimatedCursor = require('react-animated-cursor')
+// const AnimatedCursor = require('react-animated-cursor')
 
 function App() {
   gsap.registerPlugin(ScrollTrigger)
@@ -16,7 +16,7 @@ function App() {
     <div className="w-screen min-h-screen overflow-x-hidden">
       <Header />
       <Home />
-      <div className="relative z-[999999]">
+      {/* <div className="relative z-[999999]">
         <AnimatedCursor
           innerSize={8}
           outerSize={24}
@@ -27,7 +27,7 @@ function App() {
           outerScale={1.1}
           trailingSpeed={5}
         />
-      </div>
+      </div> */}
     </div>
   )
 }
