@@ -11,11 +11,11 @@ export default function HomeHero() {
   return (
     <Box
       id="hero"
-      position="relative"
+      // position="relative"
       height={{ xs: '75vh', md: '95vh' }}
-      width="100vw"
-      maxWidth="100vw"
-      overflow="hidden"
+      // width="100vw"
+      // maxWidth="100vw"
+      // overflow="hidden"
       className="bg-alt-blue shadow-xl"
       borderRadius="0 0 20px 20px"
     >

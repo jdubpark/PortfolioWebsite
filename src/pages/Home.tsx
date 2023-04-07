@@ -9,7 +9,6 @@ import HomeWork from '../layouts/Home/Work'
 function HomeMainContent({ children }: { children: React.ReactNode[] }) {
   return (
     <Box
-      width="100vw"
       maxWidth="100vw"
       sx={{
         paddingY: { xs: 8, md: 12 },

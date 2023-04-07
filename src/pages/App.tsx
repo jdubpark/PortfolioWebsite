@@ -9,11 +9,15 @@ import Home from './Home'
 // eslint-disable-next-line no-undef
 // const AnimatedCursor = require('react-animated-cursor')
 
+//
+// NOTE: Currently disabled the animated cursor as it severely lags on high velocity movements.
+//
+
 function App() {
   gsap.registerPlugin(ScrollTrigger)
 
   return (
-    <div className="w-screen min-h-screen overflow-x-hidden">
+    <>
       <Header />
       <Home />
       {/* <div className="relative z-[999999]">
@@ -28,7 +32,7 @@ function App() {
           trailingSpeed={5}
         />
       </div> */}
-    </div>
+    </>
   )
 }
 
