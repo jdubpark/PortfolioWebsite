@@ -52,7 +52,7 @@ const projectItems: ProjectItemProps[] = [
 		youtube: 'https://www.youtube.com/watch?v=C2dKyKeqq-0',
 		blocks: <BasicTextBlocks texts={[
 			'NFT Wordle (Nordle) is a tool to create and concatenate random generative NFTs. In a click, users can collect a single-word NFT, which they can combine into longer phrases to create more expressive NFTs.',
-			'It uses DALLE-2 to generate an image from a given word/phrase. It uses Chainlink VRF and Any API to generate a random word and call the custom DALLE-2 API.',
+			'Using Chainlink VRF and Any API, Nordle generates a random word or combines them into a sequence of words, which the server with DALLE-2 API consumes to generate an image.',
 			'Won: Best Use of Chainlink @ HackATL',
 		]} />,
 	},
