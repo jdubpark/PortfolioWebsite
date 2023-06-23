@@ -35,10 +35,10 @@ const workItems: WorkItemProps[] = [
 		fromTime: '05/2022',
 		toTime: '02/2023',
 		blocks: <BasicTextBlocks texts={[
-			'Lead the development of a prop trading tool to manage market exposure with on-chain money markets and options & perps on L2s.',
+			'Led the development of a prop trading tool to manage market exposure with on-chain money markets and options & perps on L2s.',
 			'Researched and implemented various bespoke strategies to trade on concentrated AMMs and miniminze divergence loss.',
-			'Established a rigorous unit-testing & monitoring framework to stress test strategies and track performance',
-			'Spearhead the due diligence system to analyze the risk in protocol & bridge mechanisms and smart contract codebases.',
+			'Established a rigorous unit-testing & monitoring framework to stress test strategies and track performance.',
+			'Spearhead a robust due diligence system to analyze smart contract and protocol risks.',
 		]} />,
 	},
 	{

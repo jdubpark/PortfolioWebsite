@@ -2,14 +2,15 @@ import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import React from 'react'
 
-import beetectLogo from '../assets/logo/beetect.png'
+import beetectLogo from 'url:../assets/logo/beetect.png'
 import chatGtpLogo from 'url:../assets/logo/chatGTP.svg'
 import continualBERTLogo from 'url:../assets/logo/continualBERT.png'
-import nordleLogo from '../assets/logo/nordle.png'
-import xAbelianLogo from '../assets/logo/xAbelian.png'
+import nordleLogo from 'url:../assets/logo/nordle.png'
+import xAbelianLogo from 'url:../assets/logo/xAbelian.png'
 import xHolasLogo from 'url:../assets/logo/xHolas.svg'
 import xNameLogo from 'url:../assets/logo/xName.svg'
 import zkKYCSBTLogo from 'url:../assets/logo/zkKYCSBT.svg'
+import uiucBlueLogo from 'url:../assets/logo/uiucBlue.png'
 
 const imageStyle = { height: '100%', width: 'auto', maxHeight: 'inherit', margin: '0 auto' }
 
@@ -29,6 +30,18 @@ function BasicTextBlocks({ texts }: { texts: string[] }) {
 }
 
 const projectItems: ProjectItemProps[] = [
+	{
+		name: 'No-need DFS',
+		logo: <img src={uiucBlueLogo} alt="ChatGTP" style={imageStyle} />,
+		fromTime: 'May 2023',
+		toTime: '',
+		github: 'https://gist.github.com/jdubpark/1be5713022eee374dae25b41365e0890',
+		twitter: 'https://twitter.com/jwpark02/status/1652925088436477959',
+		blocks: <BasicTextBlocks texts={[
+			'Decided to write DFS in MIPS for fun (class lab), and it was a lot of not-fun debugging stacks. Learned after that I could have just hard-coded the search paths, but oh well...',
+			'Won: lols from friends',
+		]} />,
+	},
 	{
 		name: 'ChatGTP',
 		logo: <img src={chatGtpLogo} alt="ChatGTP" style={imageStyle} />,

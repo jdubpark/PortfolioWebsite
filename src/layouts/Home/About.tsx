@@ -124,7 +124,7 @@ export default function HomeAbout() {
 				mt={{ xs: 6, md: 8 }}
 				width="100%"
 			>
-				{dataAbout.shortWords.map((shortWords, idx) => (<AboutShortWords key={shortWords.title} order={idx+1} {...shortWords} />))}
+				{dataAbout.shortWords.map((shortWords, idx) => (<AboutShortWords key={shortWords.title} order={idx} {...shortWords} />))}
 			</Stack>
 		</Section>
   )
