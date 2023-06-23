@@ -51,6 +51,7 @@ declare global {
 		toTime: string,
 		github?: string,
 		youtube?: string,
+		twitter?: string,
 		webMain?: string,
 		webAlt?: string,
 		blocks: JSX.Element | React.ReactNode | React.ReactNode[],

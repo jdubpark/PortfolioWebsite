@@ -12,7 +12,7 @@ import dataProjectItems from '../../data/projects'
 function ProjectItem({
 	name, logo, fromTime, toTime, blocks,
 	// links
-	github, youtube, webMain, webAlt,
+	github, youtube, twitter, webMain, // webAlt,
 	// misc
 	odd,
 }: ProjectItemProps & { odd?: boolean } ) {
@@ -53,8 +53,8 @@ function ProjectItem({
 				>
 					{github && <SocialIconButton href={github} />}
 					{youtube && <SocialIconButton href={youtube} />}
+					{twitter && <SocialIconButton href={twitter} />}
 					{webMain && <SocialIconButton href={webMain} custom />}
-					{/* {twitter && <SocialIconButton href={twitter} />} */}
 				</Stack>
 			</Stack>
 			<Box
