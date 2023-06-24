@@ -26,7 +26,7 @@ const workItems: WorkItemProps[] = [
 		fromTime: 'From May \'23',
 		toTime: '',
 		blocks: <BasicTextBlocks texts={[
-			'TBD, learning Rust and Solana at the moment :)',
+			'Allergic to shellfish but learning Rust. "Let him cook"',
 		]} />,
 	},
 	{
