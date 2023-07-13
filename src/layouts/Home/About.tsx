@@ -11,59 +11,65 @@ import Section from '../../components/Section'
 // import SocialIconButton from '../../components/SocialIconButton'
 import dataAbout from '../../data/about'
 
-function AboutShortProfile({ header, content, logo: Logo, linked }: AboutShortProfileProps) {
+function AboutShortProfile({ header, content, logo: Logo, linked, highlight }: AboutShortProfileProps) {
   return (
     <Box
       flex={{ xs: '100%', sm: '50%', md: '33%' }}
       padding={1}
-      component={linked ? 'a' : 'div'}
-      href={linked}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Stack
-        direction="row"
-        justifyContent="flex-start"
-        alignItems="center"
-        spacing={2}
-        paddingY={2}
-        paddingX={3}
-        borderRadius={4}
-        // width={{ xs: '100%', md: '300px' }}
-        className={linked ? 'bg-blue-600 hover:bg-blue-500 text-white' : 'bg-neutral-200/50 text-inherit'}
-        sx={{
-          '&:not(:last-child)': {
-            mb: 2,
-          }
-        }}
       >
-        <Logo size="28" />
-        <Box className="text-left">
-          <Typography
-            variant="body2"
-            className={clsx(
-              linked ? 'text-white/70' : 'text-gray-500/90',
-              'leading-none',
-            )}
-          >
-            {header}
-          </Typography>
-          <Typography
-            variant="body1"
-            fontWeight={linked ? 'bold' : 'normal'}
-            fontSize={{ xs: '1.2em', md: '1em' }}
-            overflow="hidden"
-            textOverflow="ellipsis"
-            display="-webkit-box"
-            sx={{
-              WebkitLineClamp: '1', // 1-line ellipsis
-              WebkitBoxOrient: 'vertical',
-            }}
-          >
-            {content}
-          </Typography>
-        </Box>
-      </Stack>
+      <Box
+        width="100%"
+        component={linked ? 'a' : 'div'}
+        href={linked}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Stack
+          direction="row"
+          justifyContent="flex-start"
+          alignItems="center"
+          spacing={2}
+          paddingY={2}
+          paddingX={3}
+          borderRadius={4}
+          // width={{ xs: '100%', md: '300px' }}
+          className={clsx(
+            highlight ? 'bg-blue-600 text-white' : 'bg-neutral-200/50 text-inherit',
+            linked ? 'hover:bg-blue-500 hover:text-white' : ''
+          )}
+          sx={{
+            '&:not(:last-child)': {
+              mb: 2,
+            }
+          }}
+        >
+          <Logo size="28" />
+          <Box className="text-left">
+            <Typography
+              variant="body2"
+              className={clsx(
+                highlight ? 'opacity-70' : linked ? 'opacity-60' : 'opacity-50',
+              )}
+            >
+              {header}
+            </Typography>
+            <Typography
+              variant="body1"
+              fontWeight={linked ? 'bold' : 'normal'}
+              fontSize={{ xs: '1.2em', md: '1em' }}
+              overflow="hidden"
+              textOverflow="ellipsis"
+              display="-webkit-box"
+              sx={{
+                WebkitLineClamp: '1', // 1-line ellipsis
+                WebkitBoxOrient: 'vertical',
+              }}
+            >
+              {content}
+            </Typography>
+          </Box>
+        </Stack>
+      </Box>
     </Box>
   )
 }

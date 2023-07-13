@@ -28,6 +28,7 @@ declare global {
 		header: string,
 		content: string,
 		linked?: string,
+		highlight?: boolean,
 	}
 	
 	interface AboutShortWordsProps {
