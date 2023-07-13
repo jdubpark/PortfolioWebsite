@@ -33,8 +33,8 @@ function ProjectItem({
 				height="100%"
 				width="100%"
 				maxWidth={{ xs: '100%', sm: '250px' }}
-				p={{ xs: 3, md: 4 }}
-				pb={{ xs: 2, md: 2 }}
+				p={3}
+				pb={{ xs: 2, md: 3 }}
 				borderRadius={4}
 				className={bgcClass}
 			>

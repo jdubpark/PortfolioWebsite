@@ -3,7 +3,9 @@ import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import React from 'react'
 
-function BasicTextBlocks({ texts }: { texts: string[] }) {
+import letHimCookImage from '../assets/images/let-him-cook.jpg'
+
+function VersatileBlocks({ children }: React.PropsWithChildren) {
 	return (
 		<Stack
 			direction="column"
@@ -13,8 +15,16 @@ function BasicTextBlocks({ texts }: { texts: string[] }) {
 			width="100%"
 			maxWidth={{ md: '700px' }}
 		>
-			{texts.map((text, idx) => (<Typography key={idx} variant="body1">{text}</Typography>))}
+			{children}
 		</Stack>
+	)
+}
+
+function BasicTextBlocks({ texts }: { texts: string[] }) {
+	return (
+		<VersatileBlocks>
+			{texts.map((text, idx) => (<Typography key={idx} variant="body1">{text}</Typography>))}
+		</VersatileBlocks>
 	)
 }
 
@@ -25,9 +35,14 @@ const workItems: WorkItemProps[] = [
 		title: 'Software Engineer Intern',
 		fromTime: 'From May \'23',
 		toTime: '',
-		blocks: <BasicTextBlocks texts={[
-			'Allergic to shellfish but learning Rust. "Let him cook"',
-		]} />,
+		blocks: (
+			<VersatileBlocks>
+				<img src={letHimCookImage} alt="Let him cook" style={{ width: '100%', maxWidth: '400px', borderRadius: '8px' }} />
+				<Typography variant="body1">
+					Rehypothecating (re-collateralizing) AMM positions on Solana.
+				</Typography>
+			</VersatileBlocks>
+		),
 	},
 	{
 		company: 'Diffuse',

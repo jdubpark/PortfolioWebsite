@@ -1,14 +1,14 @@
 import {
-	FcAddressBook, FcBriefcase, FcWikipedia, FcCollect, FcGlobe, FcGraduationCap
+	FcAddressBook, FcBriefcase, FcWikipedia, FcCommandLine, FcGlobe, FcGraduationCap
 } from 'react-icons/fc'
 
 const profileShorts: AboutShortProfileProps[] = [
   { logo: FcGlobe, header: 'From', content: 'Seoul, Korea' },
   { logo: FcAddressBook, header: 'Email', content: 'contact@{domain}' },
   { logo: FcBriefcase, header: 'Summer 23', content: 'Solana Labs' },
-  { logo: FcCollect, header: 'Around', content: 'Chicago, IL' },
   { logo: FcGraduationCap, header: 'Studying', content: 'UIUC CS (2024)' },
   // { logo: FcCalendar, header: 'Next up', content: 'ETH Denver' },
+  { logo: FcCommandLine, header: 'Check out my', content: 'GitHub', linked: 'https://github.com/jdubpark' },
   { logo: FcWikipedia, header: 'Click for my', content: 'Resume', linked: 'https://resume.parkjongwon.com' }
 ]
 
@@ -41,14 +41,25 @@ const shortWords: AboutShortWordsProps[] = [
 	{
 		title: 'Thesis',
 		content: [
-			'My main crypto thesis for 2023 is alt Layer-1 Multi-chain. I\'m also concerned with the security risks of DeFi and fond of formal verification.',
-			'I\'m also fond of activities around advanced cryptographic primitives in DeFi. I believe that AI/ML will need to marry with blockchain to provide human-friendly UI/UX to onboard the next billion users.'
+			'My main crypto thesis for 2023 is alt Layer-1 Multi-chain. I\'m also pondering on ways to minimize major security risks for consumers in blockchain.',
+			'I\'m keen on the intersection of AI and blockchain for providing intuitive UI and UX to reduce frictions on onboarding users.'
 		],
 	},
 	{
 		title: 'Past',
 		content: [
 			'I\'ve explored NLP and LLMs, e.g. self-attention, Transformers, and BERT. I drew boxes around many bees to train a bee detecting model — that was fun?',
+		],
+	},
+	{
+		title: 'Why Blockchain?',
+		content: [
+			'Why am I building in blockchain, you might ask?',
+			'When I mined crypto in 2017, the uncharted territory of blockchain baffled me. I was fascinated by the creation of decentralized storage of value (money) and the ability to trustlessly rely on a network of computers. I was hooked.',
+			'I am, and you are, at the mercy of the government and banks. If a bank closes your account or the government revokes licenses, you are left with nothing.',
+			'We own nothing of "our" data. Our tweets are owned by Twitter, our photos by Instagram, and our attention by Youtube. If they decide to ban you, you are left with nothing.',
+			'Blockchain is the next paradigm to civilization — "ownership" is a fundmental human right under siege in our current internet system.',
+			'I want ownership of my data. So I\'m build it on blockchain.',
 		],
 	},
 ]
