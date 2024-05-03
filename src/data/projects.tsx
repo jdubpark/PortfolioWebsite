@@ -75,8 +75,8 @@ const projectItems: ProjectItemProps[] = [
 		]} />,
 	},
 	{
-		name: 'Initmail',
-		logo: <img src={initMailLogo} alt="Initmail" style={imageStyle} />,
+		name: 'InitMail',
+		logo: <img src={initMailLogo} alt="InitMail" style={imageStyle} />,
 		fromTime: 'Sep 2023',
 		toTime: '',
 		github: 'https://github.com/orgs/InitMail/repositories',
