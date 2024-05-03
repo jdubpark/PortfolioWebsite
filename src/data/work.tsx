@@ -51,7 +51,7 @@ const workItems: WorkItemProps[] = [
 		toTime: '05/2022',
 		blocks: <BasicTextBlocks texts={[
 			'Democratic Inputs to AI',
-			'❏ Designed & developed an DAO + AI system for 200+ people and people of special needs.'
+			'❏ Designed & developed an DAO + AI system for 200+ people and people of special needs.',
 			'❏ Optimize UX for participants to onboard on Optimism L2 (blockchain) and vote with live updates via Snapshot API.',
 			'❏ Managed clusters of Nodejs servers & PostgreSQL dbs with Redis cache to lower avg. latency to sub-300ms for live chats with GPT and other users in Asia and North/South America.',
 			'❏ Perform live analyses of user interactions with website & patterns to evaluate metrics such as attention spans and UX usability.',
