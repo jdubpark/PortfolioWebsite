@@ -59,7 +59,6 @@ const workItems: WorkItemProps[] = [
 	},
 	{
 		company: 'Solana Labs',
-		active: true,
 		title: 'Software Engineer Intern',
 		fromTime: '05/2023',
 		toTime: '08/2023',
