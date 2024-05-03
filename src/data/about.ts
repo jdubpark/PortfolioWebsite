@@ -5,7 +5,7 @@ import {
 const profileShorts: AboutShortProfileProps[] = [
   { logo: FcGlobe, header: 'From', content: 'Seoul, Korea' },
   { logo: FcAddressBook, header: 'Email', content: 'contact@{domain}' },
-  { logo: FcBriefcase, header: 'Summer 23', content: 'Solana Labs' },
+  { logo: FcBriefcase, header: 'Working at', content: 'Story Protocol' },
   { logo: FcGraduationCap, header: 'Studying', content: 'UIUC CS (2024)' },
   // { logo: FcCalendar, header: 'Next up', content: 'ETH Denver' },
   { logo: FcCommandLine, header: 'Check out my', content: 'GitHub', linked: 'https://github.com/jdubpark' },
