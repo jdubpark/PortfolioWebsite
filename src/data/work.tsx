@@ -47,8 +47,8 @@ const workItems: WorkItemProps[] = [
 	{
 		company: 'UIUC OpenAI grant',
 		title: 'Research Assistant',
-		fromTime: '09/2021',
-		toTime: '05/2022',
+		fromTime: '08/2023',
+		toTime: '11/2023',
 		blocks: <BasicTextBlocks texts={[
 			'Democratic Inputs to AI',
 			'❏ Designed & developed an DAO + AI system for 200+ people and people of special needs.',
