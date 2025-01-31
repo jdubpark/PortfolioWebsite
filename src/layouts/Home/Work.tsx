@@ -46,7 +46,7 @@ function WorkItem({
 }
 
 export default function HomeWork() {
-	const [expanded, setExpanded] = React.useState<string | false>('Solana Labs') // default expanded
+	const [expanded, setExpanded] = React.useState<string | false>('Story') // default expanded
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
