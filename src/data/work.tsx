@@ -38,9 +38,11 @@ const workItems: WorkItemProps[] = [
 		blocks: (
 			<VersatileBlocks>
 				<img src={letHimCookImage} alt="Let him cook" style={{ width: '100%', maxWidth: '400px', borderRadius: '8px' }} />
-				<Typography variant="body1">❏ Protocol design & testing</Typography>
-				<Typography variant="body1">❏ Rolling my 🐹 brain to ideate</Typography>
-				<Typography variant="body1">❏ Exploring the uncharted territory of IP market</Typography>
+				<Typography variant="body1">❏ Blockchain research, architecture, development, and testing (Cosmos SDK + EVM)</Typography>
+				<Typography variant="body1">❏ Protocol research, architecture, development, and testing (Solidity smart contracts)</Typography>
+				<Typography variant="body1">❏ Ideate on the IP market & IPFi</Typography>
+				<Typography variant="body1">❏ Help external teams build on Story</Typography>
+				<Typography variant="body1">❏ Reply/Yap on Twitter, mainly tech answers</Typography>
 			</VersatileBlocks>
 		),
 	},
