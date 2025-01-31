@@ -30,9 +30,9 @@ function BasicTextBlocks({ texts }: { texts: string[] }) {
 
 const workItems: WorkItemProps[] = [
 	{
-		company: 'Story Protocol',
+		company: 'Story',
 		active: true,
-		title: 'Protocol Engineer',
+		title: 'Blockchain Engineer',
 		fromTime: 'From Dec \'23',
 		toTime: '',
 		blocks: (
