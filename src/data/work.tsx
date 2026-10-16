@@ -30,69 +30,73 @@ function BasicTextBlocks({ texts }: { texts: string[] }) {
 
 const workItems: WorkItemProps[] = [
 	{
-		company: 'Story',
+		company: 'Poseidon AI',
 		active: true,
-		title: 'Blockchain Engineer',
-		fromTime: 'From Dec \'23',
-		toTime: '',
+		title: 'Head of Engineering',
+		fromTime: 'Feb 2026',
+		toTime: 'Present',
+		blocks: <BasicTextBlocks texts={[
+			'❏ Lead the engineering team and roadmap for the AI data flywheel and value-oriented products.',
+			'❏ Architect a distributed data collection app for 50k+ users and a processing pipeline for 100k+ hours of video.',
+			'❏ Design verifiable data networks: incentivized, decentralized generic compute for lower cost and accessibility.',
+			'❏ Coordinate teams in the US, Korea, and China on technology and business.',
+		]} />,
+	},
+	{
+		company: 'Story Protocol',
+		title: 'Software Engineer',
+		fromTime: 'Dec 2023',
+		toTime: 'Feb 2026',
 		blocks: (
 			<VersatileBlocks>
 				<img src={letHimCookImage} alt="Let him cook" style={{ width: '100%', maxWidth: '400px', borderRadius: '8px' }} />
-				<Typography variant="body1">❏ Blockchain research, architecture, development, and testing (Cosmos SDK + EVM)</Typography>
-				<Typography variant="body1">❏ Protocol research, architecture, development, and testing (Solidity smart contracts)</Typography>
-				<Typography variant="body1">❏ Ideate on the IP market & IPFi</Typography>
-				<Typography variant="body1">❏ Help external teams build on Story</Typography>
-				<Typography variant="body1">❏ Reply/Yap on Twitter, mainly tech answers</Typography>
+				<Typography variant="body1">The Data Foundation</Typography>
+				<Typography variant="body1">❏ Developed and released the Story blockchain from scratch, from research through architecture.</Typography>
+				<Typography variant="body1">❏ Contributed to IP and UGC products, including IP Portal and Remixing.</Typography>
+				<Typography variant="body1">❏ Managed technical relationships with ecosystem projects and helped them implement smart contracts.</Typography>
 			</VersatileBlocks>
 		),
 	},
 	{
 		company: 'UIUC OpenAI grant',
-		title: 'Research Assistant',
-		fromTime: '08/2023',
-		toTime: '11/2023',
+		title: 'Lead Developer',
+		fromTime: 'Aug 2023',
+		toTime: 'Oct 2023',
 		blocks: <BasicTextBlocks texts={[
-			'Democratic Inputs to AI',
-			'❏ Designed & developed an DAO + AI system for 200+ people and people of special needs.',
-			'❏ Optimize UX for participants to onboard on Optimism L2 (blockchain) and vote with live updates via Snapshot API.',
-			'❏ Managed clusters of Nodejs servers & PostgreSQL dbs with Redis cache to lower avg. latency to sub-300ms for live chats with GPT and other users in Asia and North/South America.',
-			'❏ Perform live analyses of user interactions with website & patterns to evaluate metrics such as attention spans and UX usability.',
+			'SALT Lab',
+			'❏ Implemented a full-stack system for 200+ people chatting with GPT and with each other for an experiment.',
+			'❏ Optimized live chat latency to sub-300ms across 5 distributed servers in the US.',
 		]} />,
 	},
 	{
 		company: 'Solana Labs',
-		title: 'Software Engineer Intern',
-		fromTime: '05/2023',
-		toTime: '08/2023',
+		title: 'Product Engineer Intern',
+		fromTime: 'May 2023',
+		toTime: 'Aug 2023',
 		blocks: <BasicTextBlocks texts={[
-			'Team: Product Engineering',
-			'❏ Developed a permissionless, unlimited leverage trading platform on Solana. (Implementation of InfinityPools whitepaper with forked Orca Whirlpool).',
-			'❏ Contributed to the Solana Explorer.',
-			'❏ Studied the Solana ecosystem, especially around DeFi like Orca, Raydium, and Jupiter, and MEV.',
+			'❏ Created a 100x leverage trading protocol on a concentrated-liquidity AMM on Solana.',
+			'❏ Researched DeFi options and wrote programs from scratch to materialize whitepaper ideas.',
 		]} />,
 	},
 	{
 		company: 'Diffuse',
-		title: 'Junior Trader',
-		fromTime: '05/2022',
-		toTime: '02/2023',
+		title: 'Jr. Trader',
+		fromTime: 'May 2022',
+		toTime: 'Feb 2023',
 		blocks: <BasicTextBlocks texts={[
-			'❏ Led the development of a prop trading tool to manage market exposure with on-chain money markets and options & perps on L2s.',
-			'❏ Researched and implemented various bespoke strategies to trade on concentrated AMMs and miniminze divergence loss.',
-			'❏ Established a rigorous unit-testing & monitoring framework to stress test strategies and track performance.',
-			'❏ Spearhead a robust due diligence system to analyze smart contract and protocol risks.',
+			'❏ Developed a trading tool to manage DeFi lending and other strategies with on-chain money markets.',
+			'❏ Spearheaded due diligence on protocol and bridge mechanisms and on smart contract codebases.',
+			'❏ Handled liquidity provisioning, yield farming, token mechanisms, and cross-chain stablecoin arbitrage.',
 		]} />,
 	},
 	{
 		company: 'UIUC Disruption Lab',
-		title: 'Tech Lead',
-		fromTime: '08/2021',
-		toTime: '01/2023',
+		title: 'Technical Lead',
+		fromTime: 'Sep 2021',
+		toTime: 'Jan 2023',
 		blocks: <BasicTextBlocks texts={[
-			'❏ Spearheaded blockchain development initiatives with Proof-of-Authority Ethereum chain.',
-			'❏ Wrote Solidity smart contracts for an NFT marketplace, custom ERC-20 tokens, gasless meta-transaction network, and complex DAOs.',
-			'❏ Led a team of six to develop production-ready Web3 dApp using React.js/Redux for internal clients.',
-			'❏ Advocated for industry-standard practices inspired by OpenSea, Uniswap, and other DEXs.',
+			'❏ Directed a team of six to develop production-ready Web3 dApps with React.js and Redux for clients.',
+			'❏ Pioneered a LinkedIn-like NFT-centric website and an NFT marketplace from scratch.',
 		]} />,
 	},
 	{

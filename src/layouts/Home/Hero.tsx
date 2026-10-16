@@ -42,12 +42,23 @@ export default function HomeHero() {
               justifyContent="center"
               alignItems="center"
               spacing={2}
+              width="100%"
+              paddingX={2}
             >
               <Box paddingBottom={2} className="opacity-95">
                 <img src={cartoonPortrait} alt="Cartoon portrait" className="h-32 sm:h-40 md:h-56 m-auto" />
               </Box>
               <Typography variant="h3" fontWeight={700} className="whitespace-nowrap">Jongwon Park</Typography>
-              <Typography variant="h5" fontWeight={700} className="text-illini-orange">UIUC CS &apos;24</Typography>
+              <Typography
+                variant="h5"
+                fontWeight={700}
+                align="center"
+                className="text-illini-orange"
+                sx={{ maxWidth: { xs: '16rem', sm: '100%' }, lineHeight: 1.25 }}
+              >
+                Head of Engineering, Poseidon
+              </Typography>
+              <Typography variant="body1">UIUC CS &apos;24</Typography>
             </Stack>
           </Box>
           <Box paddingBottom={3}>
@@ -56,8 +67,16 @@ export default function HomeHero() {
               justifyContent="center"
               alignItems="center"
               spacing={2}
+              width="100%"
+              paddingX={3}
             >
-              <Typography variant="body1">Blockchain, Derivatives, Multi-chain DeFi, NLP</Typography>
+              <Typography
+                variant="body1"
+                align="center"
+                sx={{ width: '100%', maxWidth: { xs: '15rem', sm: '40rem' } }}
+              >
+                AI data systems, blockchain, distributed systems
+              </Typography>
               <Box>
                 <div className="mousey">
                   <div className="scroller"></div>

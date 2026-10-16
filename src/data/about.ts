@@ -4,9 +4,9 @@ import {
 
 const profileShorts: AboutShortProfileProps[] = [
   { logo: FcGlobe, header: 'From', content: 'Seoul, Korea' },
-  { logo: FcAddressBook, header: 'Email', content: 'contact@{domain}' },
-  { logo: FcBriefcase, header: 'Working at', content: 'Story Protocol' },
-  { logo: FcGraduationCap, header: 'Studying', content: 'UIUC CS (2024)' },
+  { logo: FcAddressBook, header: 'Email', content: 'contact@parkjongwon.com', linked: 'mailto:contact@parkjongwon.com' },
+  { logo: FcBriefcase, header: 'Working at', content: 'Poseidon AI' },
+  { logo: FcGraduationCap, header: 'Graduated', content: 'UIUC CS \'24' },
   // { logo: FcCalendar, header: 'Next up', content: 'ETH Denver' },
   { logo: FcCommandLine, header: 'Check out my', content: 'GitHub', linked: 'https://github.com/jdubpark' },
   { logo: FcWikipedia, header: 'Click for my', content: 'Resume', linked: 'https://resume.parkjongwon.com', highlight: true }
@@ -25,7 +25,7 @@ const shortWords: AboutShortWordsProps[] = [
 	{
 		title: 'Intro',
 		content: [
-			'I\'m a highly motivated student & learner active in the blockchain ecosystem. I\'ve spent the last few years developing on-chain dApps and many more with JavaScript/TypeScript for fullstack dev. I love computer systems.',
+			'I lead engineering at Poseidon AI. Before that I built the Story blockchain and spent years on on-chain systems, mostly in TypeScript, Rust, and Solidity. I love computer systems.',
 			'I first started with PHP 5.4 and XAMPP on a torching hot HP laptop. Of course, I tried to tell everyone about my brand new http://localhost:3000 website!',
 		],
 		// My first code was written in a elementary school class on my old, loud HP laptop. Fascinated by the basic HTML website flashing my name (http://localhost:3000) and enchanted by the speed of finger-to-screen reflection, I continued to code day and night.
@@ -34,8 +34,8 @@ const shortWords: AboutShortWordsProps[] = [
 		title: 'Interests',
 		content: [
 			'I\'m a decentralized system nerd, a bad SIMD optimizor, multi-core fanatic, and an Assembly taster.',
-			'Within blockchain, I extensively research in DeFi and its consumer-facing products. I fudge around with AMMs and arbs, explored tools to make LPs less green, and finding inefficiencies in DeFi.',
-			'I love fidgeting with Rust and C/C++,',
+			'Within blockchain I work on DeFi, cryptography (zero knowledge and MPC), distributed systems, and multi-chain protocols.',
+			'I love fidgeting with Rust, C, C++, Go, Solidity, and TypeScript.',
 		],
 	},
 	{
