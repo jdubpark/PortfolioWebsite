@@ -30,3 +30,5 @@ yarn-error.log*
 dist
 src/dist
 .parcel-cache
+.vercel
+.env*
